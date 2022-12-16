@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    color: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+img,
+picture {
+    max-width: 100%;
+}
+
+:root {
+
+    --clr-heading: 160 2% 31%;
+    --clr-body: 0 0% 66%;
+    --clr-sub-text: 0 0% 74%;
+    --clr-attribution: 229 19% 77%;
+
+    --fs-200: 1.0rem;
+    --fs-300: 1.2rem;
+    --fs-400: 1.4rem;
+    --fs-500: 1.8rem;
+    --fs-900: 2.4rem;
+
+    --ff-montserrat: 'montserrat', sans-serif;
+
+    --fw-600: 600;
+    --fw-700: 700;
+}
