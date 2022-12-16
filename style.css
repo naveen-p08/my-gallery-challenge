@@ -6,6 +6,7 @@
     padding: 0;
     font-family: inherit;
     color: inherit;
+    font-weight: inherit;
 }
 
 html {
@@ -23,6 +24,7 @@ picture {
     --clr-body: 0 0% 66%;
     --clr-sub-text: 0 0% 74%;
     --clr-attribution: 229 19% 77%;
+    --clr-background-gray: 0 0% 90%;
 
     --fs-200: 1.0rem;
     --fs-300: 1.2rem;
@@ -34,4 +36,99 @@ picture {
 
     --fw-600: 600;
     --fw-700: 700;
+}
+
+.container {
+    max-width: 103rem;
+    padding-inline: 1.5rem;
+    margin-inline: auto;
+}
+
+body {
+    font-weight: var(--fw-600);
+    font-family: var(--ff-montserrat);
+    text-align: center;
+    margin-block: 4rem;
+    color: hsl(var(--clr-body));
+}
+
+.info {
+    display: grid;
+    justify-content: center;
+}
+
+.artist-img img {
+    max-width: 16rem;
+    border-radius: 1.6rem;
+}
+
+.info h1 {
+    font-size: var(--fs-400);
+    color: hsl(var(--clr-heading));
+    margin-block: 0.5rem;
+}
+
+.info > p {
+    font-size: var(--fs-200);
+    margin-bottom: clamp(0.8rem, 2vw, 1.4rem);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: clamp(1.2rem, 2vw, 2.5rem);
+    margin-bottom: clamp(2rem, 5vw, 7rem);
+}
+
+.social div {
+    width: clamp(8rem, 10vw, 10rem);
+    padding-block: clamp(1rem, 2vw, 1.5rem);
+    background: hsl(var(--clr-background-gray));
+    border-radius: 1.2rem;
+}
+
+.count {
+    color: hsl(var(--clr-heading));
+    font-size: var(--fs-300);
+    line-height: 1.5;
+}
+
+.topic {
+    font-size: var(--fs-300);
+    color: hsl(var(--clr-sub-text));
+}
+
+
+
+
+.attribution {
+    margin-block: 5rem 2rem;
+}
+
+.attribution p {
+    color: hsl(var(--clr-attribution));
+    font-size: var(--fs-400);
+}
+
+.attribution a {
+    font-weight: var(--fw-700);
+    text-decoration: underline;
+}
+
+@media (min-width: 45em) {
+    .info h1 {
+        font-size: var(--fs-900);
+    }
+
+    .info p {
+        font-size: var(--fs-400);
+    }
+
+    .count {
+        font-size: var(--fs-500);
+    }
+
+    .topic {
+        font-size: var(--fs-400);
+    }
 }
