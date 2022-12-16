@@ -40,7 +40,7 @@ picture {
 
 .container {
     max-width: 103rem;
-    padding-inline: 1.5rem;
+    padding-inline: 2rem;
     margin-inline: auto;
 }
 
@@ -58,7 +58,7 @@ body {
 }
 
 .artist-img img {
-    max-width: 16rem;
+    max-width: 13rem;
     border-radius: 1.6rem;
 }
 
@@ -98,8 +98,48 @@ body {
     color: hsl(var(--clr-sub-text));
 }
 
+/* ********************* Gallery Section************* */
 
+.gallery {
+    display: grid;
+    grid-template-areas: 'side-table couch couch'
+                          'bathtub bathtub lamp'
+                          'dining plant lamp';
+    gap: clamp(0.8rem, 2vw, 1.5rem);
+}
 
+.side-table {
+    grid-area: side-table;
+}
+
+.couch {
+    grid-area: couch;
+}
+
+.bathtub {
+    grid-area: bathtub;
+}
+
+.lamp {
+    grid-area: lamp;
+}
+
+.plant {
+    grid-area: plant;
+}
+
+.dining {
+    grid-area: dining;
+}
+
+.gallery img {
+    border-radius: 1.2rem;
+    line-height: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*************************************************/
 
 .attribution {
     margin-block: 5rem 2rem;
@@ -116,6 +156,11 @@ body {
 }
 
 @media (min-width: 45em) {
+
+    .artist-img img {
+        max-width: 16rem;
+    }
+
     .info h1 {
         font-size: var(--fs-900);
     }
